@@ -17,7 +17,7 @@ const Sidebar = () => {
 	const handleAdminLogout = async () => {
 		setIsLoggingOut(true)
 		setTimeout(() => {
-			signOut({ callbackUrl: '/' })
+			signOut({ callbackUrl: '/admin/login' })
 			setIsLoggingOut(false)
 		}, 3000)
 		enqueueSnackbar('Logged out successfully.', { variant: 'success' })
