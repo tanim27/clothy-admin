@@ -23,7 +23,7 @@ const axiosRequest = async ({ req, ...options }) => {
 		throw err.response?.data || 'An error occurred'
 	}
 
-	return axios({ ...options, headers })
+	return axios({ ...options, headers, withCredentials: true })
 		.then(onSuccess)
 		.catch(onError)
 }
