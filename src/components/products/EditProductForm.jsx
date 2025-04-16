@@ -100,61 +100,10 @@ const EditProductForm = ({ product }) => {
 						/>
 					</div>
 
-					{/* Price Field */}
-					<div className='space-y-1'>
-						<label className='block text-lg font-medium text-[#1F1F1F] mb-2'>
-							Price
-						</label>
-						<Field
-							type='number'
-							name='price'
-							className='w-full px-4 py-3 border border-gray-300 rounded-lg'
-						/>
-						<ErrorMessage
-							name='price'
-							component='div'
-							className='text-red-600 text-sm mt-1'
-						/>
-					</div>
-
-					{/* Offer Price Field */}
-					<div className='space-y-1'>
-						<label className='block text-lg font-medium text-[#1F1F1F] mb-2'>
-							Offer Price
-						</label>
-						<Field
-							type='number'
-							name='offer_price'
-							className='w-full px-4 py-3 border border-gray-300 rounded-lg'
-						/>
-						<ErrorMessage
-							name='offer_price'
-							component='div'
-							className='text-red-600 text-sm mt-1'
-						/>
-					</div>
-
-					{/* Description Field */}
-					<div className='space-y-1'>
-						<label className='block text-lg font-medium text-[#1F1F1F] mb-2'>
-							Description
-						</label>
-						<Field
-							as='textarea'
-							name='description'
-							className='w-full px-4 py-3 border border-gray-300 rounded-lg resize-none'
-						/>
-						<ErrorMessage
-							name='description'
-							component='div'
-							className='text-red-600 text-sm mt-1'
-						/>
-					</div>
-
 					{/* Category Field */}
 					<div className='space-y-1'>
 						<label className='block text-lg font-medium text-[#1F1F1F] mb-2'>
-							Category
+							Product Category
 						</label>
 						<Field
 							type='text'
@@ -172,7 +121,7 @@ const EditProductForm = ({ product }) => {
 					{/* Sub Category Field */}
 					<div className='space-y-1'>
 						<label className='block text-lg font-medium text-[#1F1F1F] mb-2'>
-							Sub Category
+							Product Type
 						</label>
 						<Field
 							type='text'
@@ -190,7 +139,7 @@ const EditProductForm = ({ product }) => {
 					{/* Brand Field */}
 					<div className='space-y-1'>
 						<label className='block text-lg font-medium text-[#1F1F1F] mb-2'>
-							Brand
+							Brand Name
 						</label>
 						<Field
 							type='text'
@@ -205,10 +154,27 @@ const EditProductForm = ({ product }) => {
 						/>
 					</div>
 
+					{/* Description Field */}
+					<div className='space-y-1'>
+						<label className='block text-lg font-medium text-[#1F1F1F] mb-2'>
+							Product Description
+						</label>
+						<Field
+							as='textarea'
+							name='description'
+							className='w-full px-4 py-3 border border-gray-300 rounded-lg resize-none'
+						/>
+						<ErrorMessage
+							name='description'
+							component='div'
+							className='text-red-600 text-sm mt-1'
+						/>
+					</div>
+
 					{/* Best Selling Field */}
 					<div className='space-y-1'>
 						<label className='block text-lg font-medium text-[#1F1F1F] mb-2'>
-							Best Selling
+							Best Selling Product?
 						</label>
 						<Field
 							type='checkbox'
@@ -219,13 +185,13 @@ const EditProductForm = ({ product }) => {
 							}}
 							checked={values.best_selling} // Ensure checkbox is checked based on form value
 						/>
-						<span className='text-sm text-gray-700'>Mark as best selling</span>
+						<span className='text-sm'>Mark as best selling</span>
 					</div>
 
 					{/* New Arrival Field */}
 					<div className='space-y-1'>
 						<label className='block text-lg font-medium text-[#1F1F1F] mb-2'>
-							New Arrival
+							New Arrival Product?
 						</label>
 						<Field
 							type='checkbox'
@@ -236,13 +202,13 @@ const EditProductForm = ({ product }) => {
 							}}
 							checked={values.new_arrival} // Ensure checkbox is checked based on form value
 						/>
-						<span className='text-sm text-gray-700'>Mark as new arrival</span>
+						<span className='text-sm'>Mark as new arrival</span>
 					</div>
 
 					{/* Image Upload Field */}
 					<div className='space-y-1'>
 						<label className='block text-lg font-medium text-[#1F1F1F] mb-2'>
-							Image
+							Product Image
 						</label>
 						<div className='relative'>
 							<input
@@ -269,10 +235,44 @@ const EditProductForm = ({ product }) => {
 						/>
 					</div>
 
+					{/* Price Field */}
+					<div className='space-y-1'>
+						<label className='block text-lg font-medium text-[#1F1F1F] mb-2'>
+							Product Price
+						</label>
+						<Field
+							type='number'
+							name='price'
+							className='w-full px-4 py-3 border border-gray-300 rounded-lg'
+						/>
+						<ErrorMessage
+							name='price'
+							component='div'
+							className='text-red-600 text-sm mt-1'
+						/>
+					</div>
+
+					{/* Offer Price Field */}
+					<div className='space-y-1'>
+						<label className='block text-lg font-medium text-[#1F1F1F] mb-2'>
+							Product Offer Price
+						</label>
+						<Field
+							type='number'
+							name='offer_price'
+							className='w-full px-4 py-3 border border-gray-300 rounded-lg'
+						/>
+						<ErrorMessage
+							name='offer_price'
+							component='div'
+							className='text-red-600 text-sm mt-1'
+						/>
+					</div>
+
 					{/* Stock Field */}
 					<div className='space-y-1'>
 						<label className='block text-lg font-medium text-[#1F1F1F] mb-2'>
-							Stock
+							Product Stock
 						</label>
 						{values.stock.map((stock, index) => (
 							<div

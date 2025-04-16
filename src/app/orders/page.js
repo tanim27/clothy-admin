@@ -1,3 +1,8 @@
+export const metadata = {
+	title: 'Clothy Admin | Orders',
+	description: 'Clothy Admin application. Orders Page.',
+}
+
 import OrdersList from '@/components/orders/OrdersList'
 
 const page = () => {

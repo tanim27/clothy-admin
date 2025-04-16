@@ -72,7 +72,7 @@ const AddProductForm = () => {
 
 					<div className='space-y-1'>
 						<label className='block text-lg font-medium text-[#1F1F1F] mb-2'>
-							Name
+							Product Name
 						</label>
 						<Field
 							type='text'
@@ -88,7 +88,7 @@ const AddProductForm = () => {
 
 					<div className='space-y-1'>
 						<label className='block text-lg font-medium text-[#1F1F1F] mb-2'>
-							Category
+							Product Category
 						</label>
 						<Field
 							type='text'
@@ -105,7 +105,7 @@ const AddProductForm = () => {
 					{/* Sub-category Field */}
 					<div className='space-y-1'>
 						<label className='block text-lg font-medium text-[#1F1F1F] mb-2'>
-							Sub-category
+							Product Type
 						</label>
 						<Field
 							type='text'
@@ -122,7 +122,7 @@ const AddProductForm = () => {
 					{/* Brand Field */}
 					<div className='space-y-1'>
 						<label className='block text-lg font-medium text-[#1F1F1F] mb-2'>
-							Brand
+							Brand Name
 						</label>
 						<Field
 							type='text'
@@ -138,7 +138,7 @@ const AddProductForm = () => {
 
 					<div className='space-y-1'>
 						<label className='block text-lg font-medium text-[#1F1F1F] mb-2'>
-							Description
+							Product Description
 						</label>
 						<Field
 							type='text'
@@ -154,24 +154,28 @@ const AddProductForm = () => {
 
 					{/* Best Selling */}
 					<div className='space-y-1'>
-						<label className='flex items-center space-x-2 text-lg font-medium text-[#1F1F1F] mb-2'>
-							<Field
-								type='checkbox'
-								name='best_selling'
-							/>
-							<span>Best Selling</span>
+						<label className='block text-lg font-medium text-[#1F1F1F] mb-2'>
+							Best Selling Product?
 						</label>
+						<Field
+							type='checkbox'
+							name='best_selling'
+							className='mr-2 leading-tight'
+						/>
+						<span className='text-sm'>Mark as best selling</span>
 					</div>
 
 					{/* New Arrival */}
 					<div className='space-y-1'>
-						<label className='flex items-center space-x-2 text-lg font-medium text-[#1F1F1F] mb-2'>
-							<Field
-								type='checkbox'
-								name='new_arrival'
-							/>
-							<span>New Arrival</span>
+						<label className='block text-lg font-medium text-[#1F1F1F] mb-2'>
+							New Arrival Product?
 						</label>
+						<Field
+							type='checkbox'
+							name='new_arrival'
+							className='mr-2 leading-tight'
+						/>
+						<span className='text-sm'>Mark as new arrival</span>
 					</div>
 
 					{/* Image Upload Field */}

@@ -1,6 +1,6 @@
+import Sidebar from '@/components/sidebar/Sidebar'
 import AppProviders from '@/providers/AppProviders'
 import '@/styles/globals.css'
-import Sidebar from './../components/sidebar/Sidebar'
 
 export const metadata = {
 	title: 'Clothy Admin',

@@ -1,3 +1,8 @@
+export const metadata = {
+	title: 'Clothy Admin | Dashboard',
+	description: 'Clothy Admin application. Dashboard Page.',
+}
+
 import OrdersList from '@/components/orders/OrdersList'
 import ProductsList from '@/components/products/ProductsList'
 
